@@ -1,4 +1,8 @@
 import React from 'react';
+import Navigation from './components/common/Navigation';
+import Hero from './components/sections/Hero';
+import Timeline from './components/sections/Timeline';
+import Requirements from './components/sections/Requirements';
 
 function App() {
   return (
@@ -36,82 +40,82 @@ function App() {
         </div>
       </header>
 
-      {/* Navigation will be added in Phase 2 */}
-      <nav 
-        className="bg-white border-b border-gray-200"
-        role="navigation" 
-        aria-label="Main navigation"
-      >
-        <div className="max-w-6xl mx-auto px-4 py-4">
-          <p className="text-gray-500">Navigation will be implemented in Phase 2</p>
-        </div>
-      </nav>
+      {/* Navigation */}
+      <Navigation />
 
       {/* Main Content */}
       <main 
         id="main-content"
         tabIndex={-1}
-        className="flex-1 py-8"
+        className="flex-1"
         role="main"
         aria-label="Main content"
       >
-        <div className="max-w-6xl mx-auto px-4">
-          <section aria-labelledby="welcome-heading">
-            <h2 
-              id="welcome-heading"
-              className="text-3xl font-bold text-gray-900 mb-6"
-            >
-              Phase 1 Complete: Foundation Setup
-            </h2>
-            
-            <div className="bg-white p-8 rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">
-                ✅ Accessibility Foundation Ready
-              </h3>
-              
-              <ul className="space-y-2 text-gray-700">
-                <li className="flex items-start">
-                  <span className="text-green-600 mr-2">✓</span>
-                  React TypeScript project initialized
-                </li>
-                <li className="flex items-start">
-                  <span className="text-green-600 mr-2">✓</span>
-                  Tailwind CSS configured with accessibility-focused colors
-                </li>
-                <li className="flex items-start">
-                  <span className="text-green-600 mr-2">✓</span>
-                  ESLint with jsx-a11y rules active
-                </li>
-                <li className="flex items-start">
-                  <span className="text-green-600 mr-2">✓</span>
-                  Axe-core automated testing enabled
-                </li>
-                <li className="flex items-start">
-                  <span className="text-green-600 mr-2">✓</span>
-                  Project structure with accessibility utilities
-                </li>
-                <li className="flex items-start">
-                  <span className="text-green-600 mr-2">✓</span>
-                  Semantic HTML structure with ARIA landmarks
-                </li>
-                <li className="flex items-start">
-                  <span className="text-green-600 mr-2">✓</span>
-                  Skip links and focus management implemented
-                </li>
-              </ul>
+        {/* Hero Section */}
+        <Hero />
 
-              <div className="mt-6 p-4 bg-blue-50 rounded-lg">
-                <h4 className="font-semibold text-blue-900 mb-2">
-                  Ready for Phase 2
-                </h4>
-                <p className="text-blue-800">
-                  The accessibility foundation is now in place. You can proceed to 
-                  Phase 2 to implement the core content sections (Hero, Timeline, and Requirements).
-                </p>
+        {/* Timeline Section */}
+        <Timeline />
+
+        {/* Requirements Section */}
+        <Requirements />
+
+        {/* Phase 2 Complete Section */}
+        <section className="py-16 bg-white" aria-labelledby="phase2-heading">
+          <div className="max-w-6xl mx-auto px-4">
+            <div className="text-center">
+              <h2 
+                id="phase2-heading"
+                className="text-3xl font-bold text-gray-900 mb-6"
+              >
+                🎉 Phase 2 Complete: Core Content
+              </h2>
+              
+              <div className="bg-green-50 p-8 rounded-lg shadow-md max-w-3xl mx-auto">
+                <h3 className="text-xl font-semibold text-green-900 mb-4">
+                  ✅ Core Content Implemented
+                </h3>
+                
+                <ul className="space-y-2 text-green-800 text-left">
+                  <li className="flex items-start">
+                    <span className="text-green-600 mr-2">✓</span>
+                    Hero section with EU accessibility overview and key statistics
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-green-600 mr-2">✓</span>
+                    Interactive timeline with keyboard navigation and screen reader support
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-green-600 mr-2">✓</span>
+                    WCAG 2.1 AA requirements with practical code examples
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-green-600 mr-2">✓</span>
+                    Accessible navigation with mobile support and progress indicator
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-green-600 mr-2">✓</span>
+                    Tabbed interfaces with proper ARIA labels and keyboard navigation
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-green-600 mr-2">✓</span>
+                    Screen reader announcements and focus management
+                  </li>
+                </ul>
+
+                <div className="mt-6 p-4 bg-blue-50 rounded-lg">
+                  <h4 className="font-semibold text-blue-900 mb-2">
+                    Ready for Phase 3
+                  </h4>
+                  <p className="text-blue-800">
+                    Core content is now complete with full accessibility compliance. 
+                    Next: Interactive features (Compliance Checker and Developer Role Guide).
+                  </p>
+                </div>
               </div>
             </div>
-          </section>
-        </div>
+          </div>
+        </section>
       </main>
 
       {/* Footer */}
