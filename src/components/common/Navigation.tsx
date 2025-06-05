@@ -173,36 +173,8 @@ const Navigation: React.FC<NavigationProps> = ({ onNavigateToSection }) => {
               ))}
             </div>
 
-            {/* Progress indicator */}
-            <div className="mt-6 pt-4 border-t border-gray-200">
-              <div className="px-3">
-                <div className="text-sm font-semibold text-gray-900 mb-2">
-                  Compliance Deadline
-                </div>
-                <div className="text-sm text-gray-600">
-                  <time dateTime="2025-06-28">June 28, 2025</time>
-                  <span className="block text-xs text-red-600 mt-1">
-                    ⚠️ 156 days remaining
-                  </span>
-                </div>
-              </div>
-            </div>
           </div>
         )}
-      </div>
-
-      {/* Progress bar */}
-      <div className="h-1 bg-gray-200">
-        <div 
-          className="h-full bg-yellow-400 transition-all duration-300"
-          style={{ width: '67%' }} // Approximately 2/3 through to June 2025
-          role="progressbar"
-          aria-label="Time until EU accessibility compliance deadline"
-          aria-valuenow={67}
-          aria-valuemin={0}
-          aria-valuemax={100}
-          aria-valuetext="67% of time until June 28, 2025 deadline has passed"
-        />
       </div>
     </nav>
   );
