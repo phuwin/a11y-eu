@@ -151,7 +151,7 @@ const MotorAccessibility: React.FC<MotorAccessibilityProps> = ({ children }) => 
   return (
     <div className="motor-accessibility-wrapper">
       {/* Accessibility Settings Panel */}
-      <div className={`fixed top-20 right-4 z-50 transition-transform duration-300 ${
+      <div className={`fixed bottom-20 right-4 z-50 transition-transform duration-300 ${
         isSettingsOpen ? 'translate-x-0' : 'translate-x-full'
       }`}>
         <div className="bg-white border border-gray-300 rounded-lg shadow-lg p-6 max-w-sm">
@@ -295,7 +295,7 @@ const MotorAccessibility: React.FC<MotorAccessibilityProps> = ({ children }) => 
           setIsSettingsOpen(!isSettingsOpen);
           announceStateChange('Motor accessibility settings', isSettingsOpen ? 'closed' : 'opened');
         }}
-        className="fixed top-4 right-4 z-50 bg-blue-600 text-white p-3 rounded-full
+        className="fixed bottom-4 right-4 z-50 bg-blue-600 text-white p-3 rounded-full
                    hover:bg-blue-700 focus:bg-blue-700 transition-colors
                    focus:outline-none focus:ring-4 focus:ring-blue-300
                    shadow-lg min-w-12 min-h-12"

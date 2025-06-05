@@ -6,6 +6,7 @@ import Requirements from './components/sections/Requirements';
 import ComplianceChecker from './components/accessibility/ComplianceChecker';
 import DeveloperRoles from './components/sections/DeveloperRoles';
 import MotorAccessibility from './components/accessibility/MotorAccessibility';
+import EducationalContent from './components/sections/EducationalContent';
 
 function App() {
   return (
@@ -70,49 +71,8 @@ function App() {
           {/* Developer Roles Section */}
           <DeveloperRoles />
 
-          {/* Phase 4 Complete Section */}
-          <section className="py-16 bg-white" aria-labelledby="phase4-heading">
-            <div className="max-w-6xl mx-auto px-4">
-              <div className="text-center">
-                <h2 
-                  id="phase4-heading"
-                  className="text-3xl font-bold text-blue-900 mb-6"
-                >
-                  🚀 Phase 4 Complete: Advanced Accessibility
-                </h2>
-                <div className="bg-blue-50 p-8 rounded-lg shadow-md max-w-3xl mx-auto">
-                  <h3 className="text-xl font-semibold text-blue-900 mb-4">
-                    Advanced Accessibility Features Now Live
-                  </h3>
-                  <ul className="space-y-2 text-blue-800 text-left">
-                    <li className="flex items-start">
-                      <span className="text-blue-600 mr-2">✓</span>
-                      ARIA landmarks and skip links for screen readers
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-blue-600 mr-2">✓</span>
-                      Live region announcements for dynamic content
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-blue-600 mr-2">✓</span>
-                      Enhanced keyboard navigation and focus management
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-blue-600 mr-2">✓</span>
-                      Motor accessibility accommodations (large targets, reduced motion, dwell click)
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-blue-600 mr-2">✓</span>
-                      High-contrast mode and visible focus indicators
-                    </li>
-                  </ul>
-                  <div className="mt-6 p-4 bg-blue-100 rounded-lg text-blue-900">
-                    <strong>Tip:</strong> Try the accessibility settings panel (gear icon) in the top right to explore motor and visual accommodations.
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
+          {/* Educational Content Section */}
+          <EducationalContent />
         </main>
 
         {/* Footer */}
