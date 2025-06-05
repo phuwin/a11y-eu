@@ -15,6 +15,32 @@
   border: 0;
 }
 
+.large-targets button,
+.large-targets a,
+.large-targets input,
+.large-targets select,
+.large-targets textarea,
+.large-targets [role="button"],
+.large-targets [role="link"] {
+  min-height: var(--min-target-size, 56px);
+  min-width: var(--min-target-size, 56px);
+  padding: var(--target-padding, 16px);
+}
+
+.high-contrast {
+  filter: contrast(150%) brightness(110%);
+}
+
+.high-contrast button,
+.high-contrast a {
+  border: 2px solid currentColor !important;
+}
+
+* {
+  animation-duration: var(--animation-duration, 0.3s) !important;
+  transition-duration: var(--transition-duration, 0.2s) !important;
+}
+
 .sr-only:focus {
   position: static;
   width: auto;
