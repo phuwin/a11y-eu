@@ -21,13 +21,28 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint src --ext .ts,.tsx",
+    "lint:fix": "eslint src --ext .ts,.tsx --fix",
+    "a11y:test": "npm run build && npm run a11y:audit",
+    "a11y:audit": "echo 'Accessibility audit placeholder - will be replaced with axe-cli when available'"
   },
   "eslintConfig": {
     "extends": [
       "react-app",
-      "react-app/jest"
-    ]
+      "react-app/jest",
+      "plugin:jsx-a11y/recommended"
+    ],
+    "plugins": [
+      "jsx-a11y"
+    ],
+    "rules": {
+      "jsx-a11y/anchor-is-valid": "error",
+      "jsx-a11y/img-redundant-alt": "error",
+      "jsx-a11y/label-has-associated-control": "error",
+      "jsx-a11y/no-autofocus": "error",
+      "jsx-a11y/no-distracting-elements": "error"
+    }
   },
   "browserslist": {
     "production": [
@@ -40,5 +55,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@axe-core/react": "^4.10.2",
+    "autoprefixer": "^10.4.21",
+    "axe-core": "^4.10.3",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "postcss": "^8.5.4",
+    "tailwindcss": "^3.4.17"
   }
 }
