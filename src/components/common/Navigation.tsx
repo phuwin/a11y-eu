@@ -11,8 +11,8 @@ const Navigation: React.FC<NavigationProps> = ({ onNavigateToSection }) => {
   const navigationItems = [
     { id: 'timeline', label: 'Timeline', description: 'EU accessibility legislation timeline' },
     { id: 'requirements', label: 'WCAG Requirements', description: 'Detailed accessibility requirements with examples' },
-    { id: 'roles', label: 'Developer Roles', description: 'Role-specific responsibilities and actions' },
-    { id: 'resources', label: 'Resources', description: 'Tools and additional information' }
+    { id: 'compliance-checker', label: 'Compliance Checker', description: 'Interactive accessibility assessment tool' },
+    { id: 'roles', label: 'Developer Roles', description: 'Role-specific responsibilities and actions' }
   ];
 
   const handleNavigation = (sectionId: string) => {

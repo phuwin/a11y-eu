@@ -3,6 +3,8 @@ import Navigation from './components/common/Navigation';
 import Hero from './components/sections/Hero';
 import Timeline from './components/sections/Timeline';
 import Requirements from './components/sections/Requirements';
+import ComplianceChecker from './components/accessibility/ComplianceChecker';
+import DeveloperRoles from './components/sections/DeveloperRoles';
 
 function App() {
   return (
@@ -60,56 +62,66 @@ function App() {
         {/* Requirements Section */}
         <Requirements />
 
-        {/* Phase 2 Complete Section */}
-        <section className="py-16 bg-white" aria-labelledby="phase2-heading">
+        {/* Compliance Checker Section */}
+        <ComplianceChecker />
+
+        {/* Developer Roles Section */}
+        <DeveloperRoles />
+
+        {/* Phase 3 Complete Section */}
+        <section className="py-16 bg-white" aria-labelledby="phase3-heading">
           <div className="max-w-6xl mx-auto px-4">
             <div className="text-center">
               <h2 
-                id="phase2-heading"
+                id="phase3-heading"
                 className="text-3xl font-bold text-gray-900 mb-6"
               >
-                🎉 Phase 2 Complete: Core Content
+                🎉 Phase 3 Complete: Interactive Features
               </h2>
               
               <div className="bg-green-50 p-8 rounded-lg shadow-md max-w-3xl mx-auto">
                 <h3 className="text-xl font-semibold text-green-900 mb-4">
-                  ✅ Core Content Implemented
+                  ✅ Interactive Features Implemented
                 </h3>
                 
                 <ul className="space-y-2 text-green-800 text-left">
                   <li className="flex items-start">
                     <span className="text-green-600 mr-2">✓</span>
-                    Hero section with EU accessibility overview and key statistics
+                    Accessibility Compliance Checker with form validation and results
                   </li>
                   <li className="flex items-start">
                     <span className="text-green-600 mr-2">✓</span>
-                    Interactive timeline with keyboard navigation and screen reader support
+                    Interactive assessment tool with WCAG 2.1 AA scoring
                   </li>
                   <li className="flex items-start">
                     <span className="text-green-600 mr-2">✓</span>
-                    WCAG 2.1 AA requirements with practical code examples
+                    Role-based Developer Guide (Freelancer, Agency, CTO)
                   </li>
                   <li className="flex items-start">
                     <span className="text-green-600 mr-2">✓</span>
-                    Accessible navigation with mobile support and progress indicator
+                    Tabbed interface with keyboard navigation and ARIA support
                   </li>
                   <li className="flex items-start">
                     <span className="text-green-600 mr-2">✓</span>
-                    Tabbed interfaces with proper ARIA labels and keyboard navigation
+                    Liability warnings and role-specific action items
                   </li>
                   <li className="flex items-start">
                     <span className="text-green-600 mr-2">✓</span>
-                    Screen reader announcements and focus management
+                    Implementation timelines and resource recommendations
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-green-600 mr-2">✓</span>
+                    Universal compliance checklist and role comparison table
                   </li>
                 </ul>
 
                 <div className="mt-6 p-4 bg-blue-50 rounded-lg">
                   <h4 className="font-semibold text-blue-900 mb-2">
-                    Ready for Phase 3
+                    Ready for Phase 4
                   </h4>
                   <p className="text-blue-800">
-                    Core content is now complete with full accessibility compliance. 
-                    Next: Interactive features (Compliance Checker and Developer Role Guide).
+                    Interactive features are complete with comprehensive developer guidance. 
+                    Next: Advanced accessibility features (screen reader optimization, keyboard navigation enhancements).
                   </p>
                 </div>
               </div>
