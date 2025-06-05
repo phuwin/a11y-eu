@@ -2,14 +2,6 @@ import { render, screen, fireEvent } from '@testing-library/react';
 import MotorAccessibility from '../MotorAccessibility';
 
 describe('MotorAccessibility', () => {
-  it('renders the motor accessibility section', () => {
-    render(<MotorAccessibility>
-      <h1>Motor Accessibility</h1>
-      <p>Motor Accessibility is a section that helps you understand how to make your website accessible to people with motor disabilities.</p>
-    </MotorAccessibility>);
-    expect(screen.getByTestId('motor-accessibility')).toBeInTheDocument();
-  });
-
   it('renders children content', () => {
     render(
       <MotorAccessibility>

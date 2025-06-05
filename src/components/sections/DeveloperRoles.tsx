@@ -308,7 +308,6 @@ const DeveloperRoles: React.FC = () => {
           <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">
             Role Comparison Overview
           </h3>
-          <div className="overflow-x-auto">
             <table className="w-full bg-white rounded-lg shadow-md overflow-hidden">
               <thead className="bg-gray-50">
                 <tr>
@@ -373,7 +372,6 @@ const DeveloperRoles: React.FC = () => {
             </table>
           </div>
         </div>
-      </div>
     </section>
   );
 };

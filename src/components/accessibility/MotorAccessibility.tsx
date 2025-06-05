@@ -149,17 +149,17 @@ const MotorAccessibility: React.FC<MotorAccessibilityProps> = ({ children }) => 
   };
 
   return (
-    <div className="motor-accessibility-wrapper" data-testid="motor-accessibility">
+    <>
       {/* Accessibility Settings Panel */}
       <div className={`fixed bottom-20 right-4 z-50 transition-transform duration-300 ${
         isSettingsOpen ? 'translate-x-0' : 'translate-x-full'
       }`} data-testid="motor-settings-panel">
         <div className="bg-white border border-gray-300 rounded-lg shadow-lg p-6 max-w-sm">
-          <h3 className="text-lg font-semibold mb-4 text-gray-900">
+          <p className="text-lg font-semibold mb-4 text-gray-900">
             Motor Accessibility Settings
-          </h3>
+          </p>
           
-          <div className="space-y-4">
+          <aside className="space-y-4">
             {/* Reduced Motion */}
             <div className="flex items-start gap-3">
               <input
@@ -272,7 +272,7 @@ const MotorAccessibility: React.FC<MotorAccessibilityProps> = ({ children }) => 
                 Maintain hover states until clicked elsewhere
               </span>
             </label>
-          </div>
+          </aside>
 
           {/* Reset Button */}
           <div className="mt-6 pt-4 border-t border-gray-200">
@@ -340,12 +340,7 @@ const MotorAccessibility: React.FC<MotorAccessibilityProps> = ({ children }) => 
       <div className={`motor-accessibility-content ${settings.largeTargets ? 'large-targets' : ''}`}>
         {children}
       </div>
-
-      {/* CSS Styles */}
-      <style>{`
-
-      `}</style>
-    </div>
+    </>
   );
 };
 
