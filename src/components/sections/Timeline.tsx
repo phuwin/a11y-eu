@@ -72,17 +72,17 @@ const Timeline: React.FC = () => {
 
   const getEventColor = (type: TimelineEvent['type']): string => {
     switch (type) {
-      case 'legislation': return 'bg-blue-600';
-      case 'deadline': return 'bg-yellow-600';
-      case 'enforcement': return 'bg-red-600';
-      default: return 'bg-gray-600';
+      case 'legislation': return 'bg-blue-800';
+      case 'deadline': return 'bg-yellow-800';
+      case 'enforcement': return 'bg-red-800';
+      default: return 'bg-gray-800';
     }
   };
 
   return (
     <section 
       id="timeline"
-      className="py-16 bg-white"
+      className="timeline-section py-16 bg-white"
       aria-labelledby="timeline-heading"
       tabIndex={-1}
     >
@@ -156,7 +156,7 @@ const Timeline: React.FC = () => {
                     className="w-full text-left bg-gray-50 hover:bg-gray-100 focus:bg-gray-100 
                              p-6 rounded-lg shadow-md transition-colors
                              focus:outline-none focus:ring-4 focus:ring-blue-300
-                             border-l-4 border-blue-600"
+                             border-l-4 border-blue-800"
                     aria-expanded={isSelected}
                     aria-controls={`timeline-details-${event.id}`}
                     aria-describedby={`timeline-date-${event.id}`}
@@ -165,7 +165,7 @@ const Timeline: React.FC = () => {
                     <time 
                       id={`timeline-date-${event.id}`}
                       dateTime={event.date}
-                      className="text-sm font-semibold text-blue-600 mb-2 block"
+                      className="text-sm font-semibold text-blue-800 mb-2 block"
                     >
                       {formatDate(event.date)}
                     </time>
@@ -192,7 +192,7 @@ const Timeline: React.FC = () => {
                         {event.impact.toUpperCase()} IMPACT
                       </span>
                       <span 
-                        className="text-gray-500"
+                        className="text-gray-700"
                         aria-hidden="true"
                       >
                         {isSelected ? '▼' : '▶'}
@@ -245,7 +245,7 @@ const Timeline: React.FC = () => {
               <h4 className="font-semibold text-yellow-400 mb-2">
                 Current Status (2024)
               </h4>
-              <p className="text-blue-100">
+              <p className="text-white">
                 The European Accessibility Act has been transposed into national law 
                 across all EU member states. Enforcement bodies are preparing for 
                 active monitoring starting June 28, 2025.
@@ -255,7 +255,7 @@ const Timeline: React.FC = () => {
               <h4 className="font-semibold text-yellow-400 mb-2">
                 Action Required
               </h4>
-              <p className="text-blue-100">
+              <p className="text-white">
                 Begin accessibility audits immediately. Ensure all digital services 
                 meet WCAG 2.1 AA standards before the June 2025 deadline to avoid 
                 penalties up to €15,000.

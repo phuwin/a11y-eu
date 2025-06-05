@@ -47,10 +47,10 @@ const Requirements: React.FC = () => {
 
   const getLevelColor = (level: WCAgRequirement['level']): string => {
     switch (level) {
-      case 'A': return 'bg-green-600 text-white';
-      case 'AA': return 'bg-yellow-600 text-white';
-      case 'AAA': return 'bg-red-600 text-white';
-      default: return 'bg-gray-600 text-white';
+      case 'A': return 'bg-green-800 text-white';
+      case 'AA': return 'bg-yellow-800 text-white';
+      case 'AAA': return 'bg-red-800 text-white';
+      default: return 'bg-gray-800 text-white';
     }
   };
 
@@ -65,7 +65,7 @@ const Requirements: React.FC = () => {
   return (
     <section 
       id="requirements"
-      className="py-16 bg-gray-50"
+      className="requirements-section py-16 bg-gray-50"
       aria-labelledby="requirements-heading"
       tabIndex={-1}
     >
@@ -99,7 +99,7 @@ const Requirements: React.FC = () => {
                            focus:outline-none focus:ring-4 focus:ring-blue-300
                            min-h-44 ${
                   filteredPrinciple === principle.key
-                    ? 'bg-blue-600 text-white'
+                    ? 'bg-blue-800 text-white'
                     : 'bg-white text-gray-700 hover:bg-gray-100 border border-gray-300'
                 }`}
                 role="tab"
@@ -227,7 +227,7 @@ const Requirements: React.FC = () => {
                           <div className="grid md:grid-cols-2 gap-6">
                             {/* Good examples */}
                             <div>
-                              <h4 className="font-semibold text-green-700 mb-3 flex items-center gap-2">
+                              <h4 className="font-semibold text-green-800 mb-3 flex items-center gap-2">
                                 <span aria-hidden="true">✅</span>
                                 Good Examples
                               </h4>

@@ -295,8 +295,8 @@ const MotorAccessibility: React.FC<MotorAccessibilityProps> = ({ children }) => 
           setIsSettingsOpen(!isSettingsOpen);
           announceStateChange('Motor accessibility settings', isSettingsOpen ? 'closed' : 'opened');
         }}
-        className="fixed bottom-4 right-4 z-50 bg-blue-600 text-white p-3 rounded-full
-                   hover:bg-blue-700 focus:bg-blue-700 transition-colors
+        className="fixed bottom-4 right-4 z-50 bg-blue-800 text-white p-3 rounded-full
+                   hover:bg-blue-900 focus:bg-blue-900 transition-colors
                    focus:outline-none focus:ring-4 focus:ring-blue-300
                    shadow-lg min-w-12 min-h-12"
         aria-label={`${isSettingsOpen ? 'Close' : 'Open'} motor accessibility settings`}

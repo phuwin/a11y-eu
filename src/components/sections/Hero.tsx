@@ -24,9 +24,8 @@ const Hero: React.FC<HeroProps> = ({ onNavigateToSection }) => {
 
   return (
     <section 
-      className="relative bg-gradient-to-br from-blue-900 to-blue-800 text-white py-16 lg:py-24"
+      className="hero-section relative bg-gradient-to-br from-blue-900 to-blue-800 text-white py-16 lg:py-24"
       aria-labelledby="hero-heading"
-      role="banner"
     >
       {/* Background pattern for visual enhancement (decorative) */}
       <div 
@@ -48,7 +47,7 @@ const Hero: React.FC<HeroProps> = ({ onNavigateToSection }) => {
           </h1>
 
           {/* Subtitle */}
-          <p className="text-xl lg:text-2xl mb-8 text-blue-100 leading-relaxed">
+          <p className="text-xl lg:text-2xl mb-8 text-white leading-relaxed">
             The European Accessibility Act becomes mandatory on{' '}
             <time dateTime="2025-06-28" className="font-semibold text-yellow-400">
               June 28, 2025
@@ -60,19 +59,19 @@ const Hero: React.FC<HeroProps> = ({ onNavigateToSection }) => {
           <div className="grid md:grid-cols-3 gap-6 mb-10 text-center">
             <div className="bg-blue-800 bg-opacity-50 p-6 rounded-lg">
               <div className="text-3xl font-bold text-yellow-400 mb-2">87M</div>
-              <div className="text-blue-100">
+              <div className="text-white">
                 EU citizens with disabilities who benefit from accessibility
               </div>
             </div>
             <div className="bg-blue-800 bg-opacity-50 p-6 rounded-lg">
               <div className="text-3xl font-bold text-yellow-400 mb-2">€15K</div>
-              <div className="text-blue-100">
+              <div className="text-white">
                 Maximum penalty for non-compliance in some EU countries
               </div>
             </div>
             <div className="bg-blue-800 bg-opacity-50 p-6 rounded-lg">
               <div className="text-3xl font-bold text-yellow-400 mb-2">156</div>
-              <div className="text-blue-100">
+              <div className="text-white">
                 Days remaining until mandatory compliance
               </div>
             </div>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { manageFocus } from '../../utils/accessibility';
 
 interface NavigationProps {
@@ -14,6 +14,21 @@ const Navigation: React.FC<NavigationProps> = ({ onNavigateToSection }) => {
     { id: 'compliance-checker', label: 'Compliance Checker', description: 'Interactive accessibility assessment tool' },
     { id: 'roles', label: 'Developer Roles', description: 'Role-specific responsibilities and actions' }
   ];
+
+  // Listen for Escape key to close mobile menu
+  useEffect(() => {
+    if (!isMobileMenuOpen) return;
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') {
+        setIsMobileMenuOpen(false);
+        manageFocus.announce('Mobile menu closed');
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [isMobileMenuOpen]);
 
   const handleNavigation = (sectionId: string) => {
     if (onNavigateToSection) {

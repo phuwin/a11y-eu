@@ -17,7 +17,7 @@ export const AccessibleButton = forwardRef<HTMLButtonElement, AccessibleButtonPr
     `;
 
     const variantClasses = {
-      primary: 'bg-blue-600 text-white hover:bg-blue-700 focus:ring-blue-300',
+      primary: 'bg-blue-800 text-white hover:bg-blue-900 focus:ring-blue-400',
       secondary: 'bg-gray-600 text-white hover:bg-gray-700 focus:ring-gray-300',
       outline: 'border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white focus:ring-blue-300'
     };

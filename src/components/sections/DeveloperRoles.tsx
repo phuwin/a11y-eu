@@ -121,7 +121,7 @@ const DeveloperRoles: React.FC = () => {
                   <div className="text-left">
                     <div className="font-bold">{getRoleTitle(role.role)}</div>
                     <div className={`text-sm ${
-                      activeRole === role.role ? 'text-blue-100' : 'text-gray-500'
+                      activeRole === role.role ? 'text-white' : 'text-gray-700'
                     }`}>
                       {role.role === 'freelancer' && 'Individual developers'}
                       {role.role === 'agency' && 'Development teams'}
@@ -179,13 +179,13 @@ const DeveloperRoles: React.FC = () => {
               {/* Responsibilities */}
               <div className="bg-white p-6 rounded-lg shadow-sm">
                 <h4 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
-                  <span className="text-blue-600" aria-hidden="true">📋</span>
+                  <span className="text-blue-800" aria-hidden="true">📋</span>
                   Your Responsibilities
                 </h4>
                 <ul className="space-y-3">
                   {currentRole.responsibilities.map((responsibility, index) => (
                     <li key={index} className="flex items-start gap-3">
-                      <span className="text-blue-600 mt-1 flex-shrink-0" aria-hidden="true">
+                      <span className="text-blue-800 mt-1 flex-shrink-0" aria-hidden="true">
                         •
                       </span>
                       <span className="text-gray-700">{responsibility}</span>
@@ -197,13 +197,13 @@ const DeveloperRoles: React.FC = () => {
               {/* Action Items */}
               <div className="bg-white p-6 rounded-lg shadow-sm">
                 <h4 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
-                  <span className="text-green-600" aria-hidden="true">✅</span>
+                  <span className="text-green-800" aria-hidden="true">✅</span>
                   Action Items
                 </h4>
                 <ul className="space-y-3">
                   {currentRole.actionItems.map((action, index) => (
                     <li key={index} className="flex items-start gap-3">
-                      <span className="text-green-600 mt-1 flex-shrink-0" aria-hidden="true">
+                      <span className="text-green-800 mt-1 flex-shrink-0" aria-hidden="true">
                         {index + 1}.
                       </span>
                       <span className="text-gray-700">{action}</span>
@@ -330,13 +330,13 @@ const DeveloperRoles: React.FC = () => {
                   <td className="px-6 py-4 font-medium text-gray-900">
                     Liability Level
                   </td>
-                  <td className="px-6 py-4 text-yellow-600">
+                  <td className="px-6 py-4 text-yellow-800">
                     Limited/Reputation risk
                   </td>
-                  <td className="px-6 py-4 text-orange-600">
+                  <td className="px-6 py-4 text-orange-800">
                     Shared responsibility
                   </td>
-                  <td className="px-6 py-4 text-red-600">
+                  <td className="px-6 py-4 text-red-800">
                     Full corporate liability
                   </td>
                 </tr>

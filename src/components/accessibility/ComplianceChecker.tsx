@@ -227,7 +227,7 @@ const ComplianceChecker: React.FC = () => {
   return (
     <section 
       id="compliance-checker"
-      className="py-16 bg-gray-50"
+      className="compliance-checker py-16 bg-gray-50"
       aria-labelledby="checker-heading"
       tabIndex={-1}
     >
@@ -525,8 +525,8 @@ const ComplianceChecker: React.FC = () => {
                       {result.category}
                     </h4>
                     <span className={`text-lg font-bold ${
-                      result.score === result.maxScore ? 'text-green-600' :
-                      result.score > result.maxScore / 2 ? 'text-yellow-600' : 'text-red-600'
+                      result.score === result.maxScore ? 'text-green-800' :
+                      result.score > result.maxScore / 2 ? 'text-yellow-800' : 'text-red-800'
                     }`}>
                       {result.score}/{result.maxScore}
                     </span>
