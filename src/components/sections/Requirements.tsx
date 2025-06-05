@@ -170,7 +170,7 @@ const Requirements: React.FC = () => {
                     {/* Expand indicator */}
                     <div className="flex-shrink-0">
                       <span 
-                        className="text-gray-400 text-xl"
+                        className="text-gray-900 text-xl"
                         aria-hidden="true"
                       >
                         {isSelected ? '▼' : '▶'}
