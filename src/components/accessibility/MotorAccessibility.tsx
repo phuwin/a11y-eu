@@ -149,11 +149,11 @@ const MotorAccessibility: React.FC<MotorAccessibilityProps> = ({ children }) => 
   };
 
   return (
-    <div className="motor-accessibility-wrapper">
+    <div className="motor-accessibility-wrapper" data-testid="motor-accessibility">
       {/* Accessibility Settings Panel */}
       <div className={`fixed bottom-20 right-4 z-50 transition-transform duration-300 ${
         isSettingsOpen ? 'translate-x-0' : 'translate-x-full'
-      }`}>
+      }`} data-testid="motor-settings-panel">
         <div className="bg-white border border-gray-300 rounded-lg shadow-lg p-6 max-w-sm">
           <h3 className="text-lg font-semibold mb-4 text-gray-900">
             Motor Accessibility Settings

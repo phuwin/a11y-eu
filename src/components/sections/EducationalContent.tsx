@@ -5,6 +5,7 @@ const EducationalContent: React.FC = () => {
     <section 
       className="educational-content py-16 px-4 bg-gray-50"
       aria-labelledby="education-heading"
+      data-testid="educational-content"
     >
       <div className="max-w-6xl mx-auto">
         <h2 

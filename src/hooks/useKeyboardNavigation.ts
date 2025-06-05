@@ -1,6 +1,6 @@
 import { useEffect, useCallback } from 'react';
 
-interface KeyboardNavigationOptions {
+export interface KeyboardNavigationOptions {
   onEnter?: () => void;
   onEscape?: () => void;
   onArrowUp?: () => void;
@@ -12,7 +12,7 @@ interface KeyboardNavigationOptions {
 }
 
 export const useKeyboardNavigation = (
-  ref: React.RefObject<HTMLElement>,
+  ref: React.RefObject<HTMLElement | null>,
   options: KeyboardNavigationOptions
 ) => {
   const handleKeyDown = useCallback((e: KeyboardEvent) => {

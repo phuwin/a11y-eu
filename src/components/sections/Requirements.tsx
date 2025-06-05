@@ -121,6 +121,7 @@ const Requirements: React.FC = () => {
           className="space-y-6"
           role="tabpanel"
           aria-labelledby={`filter-${filteredPrinciple}`}
+          data-testid="requirements-list"
         >
           {filteredRequirements.map((requirement) => {
             const isSelected = selectedRequirement === requirement.id;

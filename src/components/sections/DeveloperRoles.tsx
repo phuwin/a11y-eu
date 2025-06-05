@@ -75,6 +75,7 @@ const DeveloperRoles: React.FC = () => {
       className="py-16 bg-white"
       aria-labelledby="roles-heading"
       tabIndex={-1}
+      data-testid="developer-roles"
     >
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-12">

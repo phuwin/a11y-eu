@@ -484,6 +484,7 @@ const ComplianceChecker: React.FC = () => {
             ref={resultsRef}
             className="mt-12 bg-white rounded-lg shadow-md p-8"
             tabIndex={-1}
+            role="region"
             aria-labelledby="results-heading"
           >
             <h3 id="results-heading" className="text-2xl font-bold text-gray-900 mb-6">

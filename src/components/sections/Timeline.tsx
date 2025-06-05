@@ -85,6 +85,7 @@ const Timeline: React.FC = () => {
       className="timeline-section py-16 bg-white"
       aria-labelledby="timeline-heading"
       tabIndex={-1}
+      data-testid="timeline"
     >
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-12">
