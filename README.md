@@ -60,6 +60,12 @@ npm run test:a11y
 npm run test:keyboard
 # Run color contrast tests
 npm run test:contrast
+
+# Run unit tests
+npm run test:unit
+
+# Deploy
+npm run deploy
 ```
 
 The application will be available at `http://localhost:3000`
@@ -85,7 +91,20 @@ src/
 - **ESLint jsx-a11y**: Catches accessibility issues during development
 - **Axe-core**: Runtime accessibility testing in development mode
 - **Playwright**: Automated E2E tests for accessibility, keyboard navigation, and color contrast (`tests/` directory)
+- **Jest + React Testing Library**: Unit tests for components, custom hooks, and utilities
 - **Manual Testing**: Encouraged with screen readers and keyboard
+
+**To run all unit tests:**
+```bash
+npm run test:unit
+```
+
+Unit tests cover:
+- Accessible React components (e.g., AccessibleButton, AccessibleInput, Navigation)
+- Accessibility utilities (e.g., color contrast, keyboard navigation, screen reader helpers)
+- Custom React hooks (e.g., useAccessibilityAnnouncements, useFocusManagement, useKeyboardNavigation, useScreenReader)
+- Section components (e.g., Hero, Timeline, Requirements, DeveloperRoles, EducationalContent)
+- Accessibility tools (e.g., ComplianceChecker, MotorAccessibility)
 
 Open browser console in development mode to see axe-core accessibility results.
 

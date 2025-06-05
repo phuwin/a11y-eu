@@ -1,4 +1,4 @@
-import { colorContrast, keyboardNavigation, screenReader } from './accessibility';
+import { colorContrast, keyboardNavigation, screenReader } from '../accessibility';
 
 describe('colorContrast', () => {
   it('getContrastRatio returns a number', () => {
